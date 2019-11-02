@@ -1,5 +1,5 @@
 # dvt-workshop
-Introductory workshop for Distant Viewing Toolkit
+
 
 ## Setup
  
