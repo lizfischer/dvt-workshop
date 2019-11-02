@@ -7,10 +7,15 @@ Make sharedfolder
 download zip, put in sharedfolder
 
 ### Running docker
-Open Terminal (Mac) or Command Prompt (Windows)
-```cd ``` to your Desktop. Then do:
+If this is the first time you're using the hipstas/dv docker image, get it by doing:
 ```
-docker run --name dv -ti -p 8000:8000 --volume path/to/folder/:/sharedfolder/ hipstas/dv bash
+docker pull hipstas/dv
+```
+
+Open Terminal (Mac) or Command Prompt (Windows)
+```cd ``` to your Desktop. Make a directory called "sharedfolder" on your Desktop, then do:
+```
+docker run --name dv -ti -p 8000:8000 --volume path/to/Desktop/sharedfolder/:/sharedfolder/ hipstas/dv bash
 ```
 You're now in the terminal of the docker container. To get into the shared folder, do
 ``` cd /sharedfolder/```
