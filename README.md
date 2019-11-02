@@ -16,7 +16,7 @@ docker pull hipstas/dv
 Open Terminal (Mac) or Command Prompt (Windows)
 ```cd ``` to your Desktop. Make a directory called "sharedfolder" on your Desktop, then do:
 ```
-docker run --name dv -ti -p 8000:8000 --volume path/to/Desktop/sharedfolder/:/sharedfolder/ hipstas/dv bash
+docker run --name dv -ti -p 8000:8000 --volume <path/to/Desktop/sharedfolder/>:/sharedfolder/ hipstas/dv bash
 ```
 
 If this is *not* the first time you've run this command, you may get an error that a container with this name already exists. Remove it by doing
