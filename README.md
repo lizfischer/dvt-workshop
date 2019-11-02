@@ -18,7 +18,7 @@ You're now in the terminal of the docker container. To get into the shared folde
 ## Running DVT on a video clip
  ```python -m dvt video-viz video.mp4```
 
-## General Tips
+### General Tips
 If it looks like DVT has stopped running (i.e. the number has been stuck for a while), try pressing an arrow key while in the command window. Sometimes the status bar just hasn’t updated and needs a little nudge to wake up.
 
 ## Viewing Output
