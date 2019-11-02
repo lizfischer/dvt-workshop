@@ -12,17 +12,18 @@ If this is the first time you're using the hipstas/dv docker image, get it by do
 docker pull hipstas/dv
 ```
 
-If this is *not* the first time you've used this image, make sure your container is gone by doing:
-```
-docker rm -f dv
-```
-
 
 Open Terminal (Mac) or Command Prompt (Windows)
 ```cd ``` to your Desktop. Make a directory called "sharedfolder" on your Desktop, then do:
 ```
 docker run --name dv -ti -p 8000:8000 --volume path/to/Desktop/sharedfolder/:/sharedfolder/ hipstas/dv bash
 ```
+
+If this is *not* the first time you've run this command, you may get an error that a container with this name already exists. Remove it by doing
+```
+docker rm -f dv
+```
+
 You're now in the terminal of the docker container. To get into the shared folder, do
 ``` cd /sharedfolder/```
 
