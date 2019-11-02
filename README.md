@@ -14,6 +14,9 @@ Open localhost:8000 in browser
 ## General Tips
 If it looks like DVT has stopped running (i.e. the number has been stuck for a while), try pressing an arrow key while in the command window. Sometimes the status bar just hasn’t updated and needs a little nudge to wake up.
 
+## Shot Length
+http://www.urbanfox.tv/creative/shotsizes.html#vls
+
 ## Face recognition
 ```
 python -m dvt video-viz <path to file> --path-to-faces=<folder with faces>
