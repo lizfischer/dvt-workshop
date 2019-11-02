@@ -12,6 +12,12 @@ If this is the first time you're using the hipstas/dv docker image, get it by do
 docker pull hipstas/dv
 ```
 
+If this is *not* the first time you've used this image, make sure your container is gone by doing:
+```
+docker rm -f dv
+```
+
+
 Open Terminal (Mac) or Command Prompt (Windows)
 ```cd ``` to your Desktop. Make a directory called "sharedfolder" on your Desktop, then do:
 ```
