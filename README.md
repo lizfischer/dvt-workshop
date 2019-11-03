@@ -32,8 +32,12 @@ You're now in the terminal of the docker container. To get to the workshop mater
 
 
 ## General How-to
-### How to run DVT on a clip
+### Running DVT on a clip
+In the terminal window, run the following command, changing `video.mp4` to whatever clip you want to run.
  `python -m dvt video-viz video.mp4`
+ 
+For example:
+`python -m dvt video-viz clips/very-short/canon_clip.mp4`
 
 #### Hot tip
 If it looks like DVT has stopped running (i.e. the number has been stuck for a while), try pressing an arrow key while in the command window. Sometimes the status bar just hasn’t updated and needs a little nudge to wake up.
@@ -46,8 +50,9 @@ python -m http.server --directory dvt-output-data
 Then go to [localhost:8000](http://locahost:8000/) in your web browser.
  
 ## Tasks
+1. Using the general instructions above, run DVT on a clip or two from the clips folder. Because DVT takes a little while to run on longer clips, you may want to try something from clips/very-short for your first time. 
 
-Choose a video clip from the clips folder. Because DVT takes a little while to run on longer clips, you may want to try something from clips/very-short for your first time. 
+2.
  
 ## Shot Length
 http://www.urbanfox.tv/creative/shotsizes.html#vls
