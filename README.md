@@ -3,27 +3,30 @@
 
 ## Setup
 ### Downloading workshop materials
-Make sharedfolder
-download zip, put in sharedfolder
+Download this repository using the green "Clone or Download" button. Unzip the folder on your desktop. 
 
 ### Running docker
 If this is the first time you're using the hipstas/dv docker image, get it by doing:
 ```
 docker pull hipstas/dv
 ```
-
-
-Open Terminal (Mac) or Command Prompt (Windows)
-```cd ``` to your Desktop. Make a directory called "sharedfolder" on your Desktop, then do:
-```
-docker run --name dv -ti -p 8000:8000 --volume <path/to/Desktop/sharedfolder/>:/sharedfolder/ hipstas/dv bash
-```
-
-If this is *not* the first time you've run this command, you may get an error that a container with this name already exists. Remove it by doing
+If this is *not* the first time you've done this, you may get an error that a container called dv already exists. Remove it by doing
 ```
 docker rm -f dv
 ```
+#### Mac
+Open Terminal 
+``` 
+docker run --name dv -ti -p 8000:8000 --volume ~/Desktop/dvt-workshop-master/:/sharedfolder/ hipstas/dv bash
+```
 
+#### Windows
+Open Command Prompt 
+```
+docker run --name dv -ti -p 8000:8000 --volume C:/Users/<yourusenamehere>/Desktop/dvt-workshop-master:/sharedfolder/ hipstas/dv bash
+```
+
+### All OSes
 You're now in the terminal of the docker container. To get into the shared folder, do
 ``` cd /sharedfolder/```
 
