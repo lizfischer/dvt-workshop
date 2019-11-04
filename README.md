@@ -22,6 +22,8 @@ Open Command Prompt
 docker run --name dv -ti -p 8000:8000 --volume C:\Users\<yourusenamehere>\Desktop\dvt-workshop-master\:/sharedfolder/ hipstas/dv bash
 ```
 #### Windows 7 (Docker Toolkit)
+Caution: this material is untested on Docker Toolkit for Windows (the pre-cursor to Docker Desktop).
+
 Open Command Prompt 
 ```
 docker run --name dv -ti -p 8000:8000 --volume //c/Users/<yourusenamehere>/Desktop/dvt-workshop-master/:/sharedfolder/ hipstas/dv bash
