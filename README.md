@@ -54,6 +54,8 @@ Then go to [localhost:8000](http://locahost:8000/) in your web browser.
  
 ### Stopping Server 
 Once you've started the server, you have to stop it before running DVT on a different clip. To stop the server, do `ctrl C` in the terminal window. Only do this once! If you do it multiple times, you may exit the docker container and need to restart it. 
+
+If you're re-running the server to view new output and you don't see the videos you're expecting in the list, do `ctrl+shift+R` or `command+shift+R` to force your broswer to reload the site.
  
 ### Face recognition
 To run DVT with face recognition, supply a folder containg one picture of every person you would like it to look for. The name of the image should be the person's name.
