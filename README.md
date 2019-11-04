@@ -16,22 +16,28 @@ Open Terminal
 ``` 
 docker run --name dv -ti -p 8000:8000 --volume ~/Desktop/dvt-workshop-master/:/sharedfolder/ hipstas/dv bash
 ```
-#### Windows
+#### Windows 10 (Docker Desktop)
 Open Command Prompt 
 ```
-docker run --name dv -ti -p 8000:8000 --volume C:/Users/<yourusenamehere>/Desktop/dvt-workshop-master:/sharedfolder/ hipstas/dv bash
+docker run --name dv -ti -p 8000:8000 --volume C:\Users\<yourusenamehere>\Desktop\dvt-workshop-master\:/sharedfolder/ hipstas/dv bash
 ```
+#### Windows 7 (Docker Toolkit)
+Open Command Prompt 
+```
+docker run --name dv -ti -p 8000:8000 --volume //c/Users/<yourusenamehere>/Desktop/dvt-workshop-master/:/sharedfolder/ hipstas/dv bash
+```
+
 #### All OSes
 You're now in the terminal of the docker container. To get to the workshop materials, do
-`cd /sharedfolder/`
+`cd /sharedfolder/`. You should now be able to see all the workshop materials in the folder by doing `ls`.
 
 ## 3. General How-to
 ### Running DVT on a clip
 In the terminal window, run the following command, changing `video.mp4` to whatever clip you want to run.
- `python -m dvt video-viz video.mp4`
+```python -m dvt video-viz video.mp4```
  
 For example:
-`python -m dvt video-viz clips/very-short/canon_clip.mp4`
+```python -m dvt video-viz clips/very-short/canon_clip.mp4```
 
 ### Viewing Output
 The `video viz` pipeline we're using generates a website with which to view outputs. To view this website, run the following command:
@@ -41,8 +47,8 @@ python -m http.server --directory dvt-output-data
 Then go to [localhost:8000](http://locahost:8000/) in your web browser.
  
  
-## Face recognition
-To run DVT with face recognition, supply a folder with one image per person
+### Face recognition
+To run DVT with face recognition, supply a folder containg one picture of every person you would like it to look for. The name of the image should be the person's name.
 ```
 python -m dvt video-viz <path to file> --path-to-faces=<folder with faces>
 ```
@@ -75,7 +81,7 @@ Because DVT takes a while to run, we prepared an output site with 20 film traile
 2. Run `python -m http.server --directory full-data-output` 
 3. Open [localhost:8000](http://locahost:8000/) in your web browser.
 
-We've also pulled select data from the JSON files DVT produces for every video and compiled them into a `AllData.csv` for easy viewing. This file contains:
+We've also pulled select data from the JSON files DVT produces for every video and compiled them into a `AllData.csv` for easy viewing. This file contains: video name, number of shots, number of shots with people, objects and people detected, avgerage number of people per shot, most common shot length, and average shot duration in seconds.
 
 ## 5. Discussion Questions
 As you do the above activities, consider the following questions based on what role you were assigned:
