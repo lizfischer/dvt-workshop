@@ -52,6 +52,8 @@ python -m http.server --directory dvt-output-data
 ```
 Then go to [localhost:8000](http://locahost:8000/) in your web browser.
  
+### Stopping Server 
+Once you've started the server, you have to stop it before running DVT on a different clip. To stop the server, do `ctrl C` in the terminal window. Only do this once! If you do it multiple times, you may exit the docker container and need to restart it. 
  
 ### Face recognition
 To run DVT with face recognition, supply a folder containg one picture of every person you would like it to look for. The name of the image should be the person's name.
