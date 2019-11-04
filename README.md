@@ -104,9 +104,11 @@ As you do the above activities, consider the following questions based on what r
 * What are the things that you did not discover when you watched the clips with your own eyes instead of with the DV tools?
 
 ### Film Scholar 
-* What data that DVT can provide might be useful in your work? 
-* What kind of expertise or skill sets do you think you need in order to interpret the data and generate meaningful questions? In other words, what might constitute the knowledge gap for you?
-* How can you connect the data output with critical questions? 
+* What kind of expertise or skill sets do you think you need in order to interpret the data and generate meaningful questions? In other words, what might constitute the knowledge gap for you? Is background information of the films, the film history (including the history of film industry), or the film semantics most important to you
+* What can DV tools tell you about the composition, shot duration & length, or movement? 
+* What results displayed on the DV tools verify or violate your intuition about certain films or certain film genres?
+* What film genres can be most suitable for the current DV tools? In order to apply DV tools to more film genres, what could be other necessary features that DV tools should develop? Can the DV tools be very smoothly applied to action films, which constitute the majority of our film dataset?
+
 
 ### Archivist 
 * How might you apply DV in your everyday work? What concerns might you have about using it?
