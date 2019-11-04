@@ -1,7 +1,8 @@
-## Setup
+
 [Distant Viewing Lab](https://www.distantviewing.org/)
 
 [Distant Viewing Toolkit documentation](https://distant-viewing.github.io/dvt/index.html)
+## Setup
 ### 1. Downloading workshop materials
 Download this repository using the green "Clone or Download" button. Unzip the folder on your desktop. 
 
