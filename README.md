@@ -1,6 +1,3 @@
-# dvt-workshop
-
-
 ## Setup
 ### 1. Downloading workshop materials
 Download this repository using the green "Clone or Download" button. Unzip the folder on your desktop. 
@@ -19,17 +16,14 @@ Open Terminal
 ``` 
 docker run --name dv -ti -p 8000:8000 --volume ~/Desktop/dvt-workshop-master/:/sharedfolder/ hipstas/dv bash
 ```
-
 #### Windows
 Open Command Prompt 
 ```
 docker run --name dv -ti -p 8000:8000 --volume C:/Users/<yourusenamehere>/Desktop/dvt-workshop-master:/sharedfolder/ hipstas/dv bash
 ```
-
 #### All OSes
 You're now in the terminal of the docker container. To get to the workshop materials, do
 `cd /sharedfolder/`
-
 
 ## 3. General How-to
 ### Running DVT on a clip
@@ -59,10 +53,10 @@ python -m dvt video-viz SpeedShortTrailer.mp4 --path-to-faces=faces/speed/clip_f
 ``` 
  
 ## 4. Activities
-#### Run and view basic DVT output
+#### 1. Run and view basic DVT output
 Using the general instructions above, run DVT on a clip or two from the clips folder. Because DVT takes a little while to run on longer clips, you may want to try something from clips/very-short for your first time. View the output in your browser and familiarize yourself with the interface.
 
-#### Face recognition 
+#### 2. Face recognition 
 DVT doesn't yet include face recognition results in the website visualization, so we've pre-run face recognition on a shortened version of the Speed trailer. We ran DVT on the clip 3 times with 3 different sets of labeled images-- 1) screenshots of the actors' faces from the clip, 2) pictures of the actors not from the film, and 3) pictures where the actors' appearances are substantially different in some way (either older/younger, no facial hair, glasses, etc.) 
 
 1. Open the `face-recognition-demo` folder.
@@ -75,7 +69,7 @@ DVT doesn't yet include face recognition results in the website visualization, s
 * Did the difference of seed image make a difference or not? In all cases, or only some? 
 * What suprised you about these results?
 
-#### Viewing a larger dataset
+#### 3. Viewing a larger dataset
 Because DVT takes a while to run, we prepared an output site with 20 film trailers, 10 string performances, and 10 protest videos. To view the full output:
 1. In the Docker terminal window, do `cd /sharedfolder/` if you aren't there already
 2. Run `python -m http.server --directory full-data-output` 
